@@ -1,0 +1,138 @@
+:root{
+    --branco: #FFFFFF;
+    --cinza-claro: #F2F2F2;
+    --cinza-medio: #C5C5C5;
+    --azul-medio: #144480;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    color: black;
+    background-color: var(--branco);
+}
+
+.topbar {
+    display: flex;
+    align-items: center;
+    height: 60px;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.topbar__logo {
+    padding: 10px;
+}
+
+.topbar__logo img {
+    height: 40px;
+}
+
+.topbar__search {
+    flex: 1;
+    display: flex;
+    justify-content: center;
+}
+
+.topbar__search-input {
+    width: 32%;
+    padding: 8px;
+    border: 1px solid var(--cinza-claro);
+    border-radius: 32px 0px 0px 32px;
+}
+
+.topbar__search-btn{
+    background-color: var(--cinza-claro);
+    border: 0px;
+    border-radius: 0px 32px 32px 0px;
+    padding: 8px;
+    padding-right: 15px;
+}
+
+.topbar__search-btn--voice{
+    border: 0px;
+    background-color: var(--branco);
+}
+
+.topbar__profile-info {
+    padding: 10px;
+}
+
+.wrapper {
+    display: flex;
+}
+
+/* Barra lateral esquerda */
+
+.sidebar {
+    width: 250px;
+    height: calc(100vh - 60px);
+    border-right: 1px solid #e0e0e0;
+    display: flex;
+    flex-direction: column;
+}
+
+.sidebar__list {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    gap: 20px;
+    margin: 0;
+    padding: 5%;
+    border: 1px solid;
+    border-color: var(--azul-medio) var(--branco);
+    list-style: none;
+    height: 100%;
+    list-style: none;
+}
+
+.sidebar__item {
+    text-decoration: none;
+}
+
+
+/* Ícones da barra lateral esquerda */
+.icone__inicio::before {
+    content: url(./img/sidebar/home.png);
+}
+
+.icone__explorar::before {
+    content: url(./img/sidebar/explore.png);
+}
+
+.icone__shorts::before {
+    content: url(./img/sidebar/airplay.png);
+}
+
+.icone__inscricoes::before {
+    content: url(./img/sidebar/subscriptions.png);
+}
+
+.icone__biblioteca::before {
+    content: url(./img/sidebar/video_library.png);
+}
+
+.icone__historico::before {
+    content: url(./img/sidebar/history.png);
+}
+
+.icone__relogio::before {
+    content: url(./img/sidebar/history_toggle_off.png);
+}
+
+.icone__like::before {
+    content: url(./img/sidebar/thumb_up_alt.png);
+}
+
+/* Miolo principal */
+.main-content {
+    flex: 1;
+    padding: 20px;
+}
+
+/* Espaço vazio do miolo principal da página em disposição de grade */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 20px;
+}
