@@ -240,6 +240,8 @@ body {
     top: 80px;
     right: 0;
     left: 0;
+    transition: transform 0.5s ease-in-out;
+    transform: translateX(0);
 }
 
 .superior__item {
@@ -249,6 +251,7 @@ body {
     border-radius: 20px;
     padding: 8px 20px;
     cursor: pointer;
+    width: 200px;
 }
 
 .superior__item:hover {
@@ -272,12 +275,22 @@ body {
     padding: 153px 20px 10px 20px;
 }
 
-.descricao-video h3 {
+iframe{
+    border-radius: 10px;
+}
+
+.descricao-video .img-canal{
+    border-radius: 100%;
+    width: 40px;
+    height: 40px;
+}
+
+.descricao-video .titulo-video {
     font-weight: 700;
     color: var(--cinza-escuro);
 }
 
-.descricao-video p {
+.descricao-video .titulo-canal {
     font-size: 14px;
     color: var(--cinza-escuro);
 }
