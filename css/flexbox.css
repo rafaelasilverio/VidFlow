@@ -13,6 +13,7 @@
 }
 
 .form__pesquisa {
+  position: relative;
   flex: 1;
   display: flex;
   justify-content: center;
@@ -65,6 +66,7 @@
   gap: 15px;
 }
 
+
 /* VIDEO */
 
 .videos__container {
@@ -74,6 +76,7 @@
 }
 
 .videos__item {
+  display: block;
   height: 303px;
   width: 280px;
   flex-grow: 1;

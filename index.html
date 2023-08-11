@@ -30,7 +30,8 @@
             <div class="cabecalho__pesquisar__item">
                 <form action="" class="form__pesquisa">
                     <input type="search" placeholder="Pesquisar" id="pesquisar" class="pesquisar__input">
-                    <button class="pesquisar__btn" type="submit">
+                    <img src="./img/topbar/keyboard.png" alt="ícone de teclado" class="pesquisar__input-teclado">
+                    <button class="pesquisar__btn">
                         <img src="./img/topbar/search.png" alt="ícone de Lupa" />
                     </button>
                     <button class="cabecalho__audio">
@@ -190,17 +191,19 @@
 
     <!-- Seção superior -->
     <section class="superior__secao__container">
-            <a class="superior__item" href="#">Tudo</a>
-            <a class="superior__item" href="#">Debates</a>
-            <a class="superior__item" href="#">Ao Vivo</a>
-            <a class="superior__item" href="#">Podcasts</a>
-            <a class="superior__item" href="#">Front-end</a>
-            <a class="superior__item" href="#">Mobile</a>
-            <a class="superior__item" href="#">Data Science</a>
-            <a class="superior__item" href="#">Apps</a>
-            <a class="superior__item" href="#">Programação</a>
-            <a class="superior__item" href="#">Inteligência Artificial</a>
-            <a class="superior__item" href="#">Inovação</a>
+        <div class="superior__secao__container-wrapper">
+            <a class="superior__item" onclick="filtrarPorCategoria(this.name)" value="Tudo" href="#">Tudo</a>
+            <a class="superior__item" onclick="filtrarPorCategoria(this.name)" name="Debates" href="#">Debates</a>
+            <a class="superior__item" onclick="filtrarPorCategoria(this.name)" name="Ao Vivo" href="#">Ao Vivo</a>
+            <a class="superior__item" onclick="filtrarPorCategoria(this.name)" name="Podcasts" href="#">Podcasts</a>
+            <a class="superior__item" onclick="filtrarPorCategoria(this.name)" name="Front-end" href="#">Front-end</a>
+            <a class="superior__item" onclick="filtrarPorCategoria(this.name)" name="Mobile" href="#">Mobile</a>
+            <a class="superior__item" onclick="filtrarPorCategoria(this.name)" name="Data Science" href="#">Data Science</a>
+            <a class="superior__item" onclick="filtrarPorCategoria(this.name)" name="Apps" href="#">Apps</a>
+            <a class="superior__item" onclick="filtrarPorCategoria(this.name)" name="Programação" href="#">Programação</a>
+            <a class="superior__item" onclick="filtrarPorCategoria(this.name)" name="Inteligência Artificial" href="#">Inteligência Artificial</a>
+            <a class="superior__item" onclick="filtrarPorCategoria(this.name)" name="Inovação" href="#">Inovação</a>
+        </div>
         <label class="superior__slider">
             <span><img src="./img/arrow_forward_ios.png" alt="Flecha direcionada para a direita"></span>
         </label>

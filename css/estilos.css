@@ -47,6 +47,12 @@ body {
     font-size: 16px;
 }
 
+.pesquisar__input-teclado{
+    position: absolute;
+    right: 16%;
+    top: 30%;
+}
+
 .pesquisar__btn {
     background-color: var(--cinza-claro);
     border: 0px;
@@ -240,8 +246,8 @@ body {
     top: 80px;
     right: 0;
     left: 0;
-    transition: transform 0.5s ease-in-out;
-    transform: translateX(0);
+    /* transition: transform 0.5s ease-in-out;
+    transform: translateX(0); */
 }
 
 .superior__item {
@@ -261,10 +267,11 @@ body {
 }
 
 .superior__slider{
-    position: absolute;
+    position: fixed;
     right: 0%;
+    top: 10.8%;
     width: 4%;
-    height: 100%;
+    height: 63px;
     background-color: var(--branco);
 }
 
@@ -277,6 +284,9 @@ body {
 
 iframe{
     border-radius: 10px;
+    width: 100%;
+    height: 62%;
+    /* preciso de help com o alinhamento desse iframe quando mudamos a categoria */
 }
 
 .descricao-video .img-canal{
