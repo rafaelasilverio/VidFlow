@@ -54,7 +54,7 @@ buscarEMostrarVideos();
 const barraDePesquisa = document.querySelector(".pesquisar__input");
 const botaoPesquisa = document.querySelector(".pesquisar__btn");
 
-barraDePesquisa.addEventListener("input", filtrarPesquisa); //fiz a pesquisa dinâmica, deixamos assim ou pelo click na lupa?
+barraDePesquisa.addEventListener("input", filtrarPesquisa);
 
 // fiz 2 versões da barra, pensei em ensinar essa por fins didáticos
 function filtrarPesquisa() {
